@@ -6,8 +6,9 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\ItemsRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\String\Slugger\SluggerInterface;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 use Symfony\Component\String\ByteString;
+use App\Services\Slugger;
 
 /**
  * @ORM\Entity(repositoryClass=ItemsRepository::class)
@@ -154,6 +155,7 @@ class Items
     public function setValue()
     {
         $this->createdAt = new \DateTime();
+        $this->slug='-';
     }
 
 
@@ -161,10 +163,10 @@ class Items
         if ((!$this->xml)||('-'===$this->xml))
             $this->xml=ByteString::fromRandom(12);
     }
-    public function computeSlug(SluggerInterface $slugger) {
+    public function computeSlug() {
+        $slugger=new Slugger();
         if (!$this->slug || '-' === $this->slug) {
-            $this->slug='rr';
-            //$this->slug = $slugger->slug((string) $this)->lower();
+            $this->slug=$slugger->slug($this->name);
         }
     }
 }
