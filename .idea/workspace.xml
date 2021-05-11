@@ -127,6 +127,8 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -142,11 +144,16 @@
       <option name="presentableId" value="Default" />
       <updated>1620302998974</updated>
       <workItem from="1620303001479" duration="4017000" />
-      <workItem from="1620308492945" duration="4978000" />
+      <workItem from="1620308492945" duration="5704000" />
+      <workItem from="1620740278215" duration="786000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
