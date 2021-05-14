@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5febfb2b-1c18-47b0-a3d4-478806930d4c" name="Default Changelist" comment="" />
+    <list default="true" id="5febfb2b-1c18-47b0-a3d4-478806930d4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Index/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Index/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Items.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Items.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityListener/ItemsGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityListener/ItemsGenerator.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +23,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -116,6 +125,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1sA6LmHN79PnmMwNKGESv89komh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -123,12 +135,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/EntityListener" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+<<<<<<< HEAD
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+=======
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+>>>>>>> 5c7f1142e5908b3273c8adae70e335804da56897
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,12 +165,17 @@
       <option name="presentableId" value="Default" />
       <updated>1620302998974</updated>
       <workItem from="1620303001479" duration="4017000" />
+<<<<<<< HEAD
       <workItem from="1620308492945" duration="5704000" />
       <workItem from="1620740278215" duration="2067000" />
       <workItem from="1620744346124" duration="976000" />
       <workItem from="1620748889761" duration="22000" />
       <workItem from="1620808414112" duration="76000" />
       <workItem from="1621000150699" duration="436000" />
+=======
+      <workItem from="1620308492945" duration="4978000" />
+      <workItem from="1620407160063" duration="4614000" />
+>>>>>>> 5c7f1142e5908b3273c8adae70e335804da56897
     </task>
     <servers />
   </component>
