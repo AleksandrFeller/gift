@@ -30,6 +30,7 @@ class ItemsCrudController extends AbstractCrudController
         yield TextField::new('name');
         yield TextField::new('picture');
         yield NumberField::new('price');
+        yield TextField::new('slug')->onlyOnIndex();
     }
 
 }

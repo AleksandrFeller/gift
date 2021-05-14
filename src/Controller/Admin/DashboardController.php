@@ -35,14 +35,11 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Товары', 'fas fa-list', Items::class);
         yield MenuItem::linkToCrud('Разделы', 'fas fa-list', ItemsSections::class);
-        yield MenuItem::linkToUrl("Загрузить товары","fa fa-upload",'/');
+        yield MenuItem::linkToUrl("Загрузить товары","fa fa-upload",'/admin/upload');
     }
     #[Route('/admin/upload',name: 'admin_upload')]
     public function admin_upload(UploadDate $service) {
         $service->uploadDate();
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/Index/Controller.php',
-        ]);
+        return $this->render("admin/update_data.html.twig");
     }
 }

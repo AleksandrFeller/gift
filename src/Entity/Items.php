@@ -165,8 +165,6 @@ class Items
     }
     public function computeSlug() {
         $slugger=new Slugger();
-        if (!$this->slug || '-' === $this->slug) {
-            $this->slug=$slugger->slug($this->name);
-        }
+        $this->slug=$slugger->slug($this->name);
     }
 }
