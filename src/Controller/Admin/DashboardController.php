@@ -38,8 +38,42 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToUrl("Загрузить товары","fa fa-upload",'/admin/upload');
     }
     #[Route('/admin/upload',name: 'admin_upload')]
-    public function admin_upload(UploadDate $service) {
-        $service->uploadDate();
-        return $this->render("admin/update_data.html.twig");
+    public function admin_upload() {
+        $pictures_folder='/public/uploads/pictures/items';
+        $uploadFile=$_SERVER['DOCUMENT_ROOT'].'/tmp/basiki.php';
+        $t = file_get_contents($uploadFile);
+        $arItems = unserialize($t);
+        $entityManager = $this->getDoctrine()->getManager();
+        foreach ($arItems as $item) {
+            echo "<pre>";
+            print_r ($item);
+            echo "</pre>";
+            $itemOb = new items();
+            $itemOb->setName($item['NAME']);
+            $itemOb->setXml($item['XML_ID']);
+            $itemOb->setPrice($item['PRICE']);
+            $entityManager->persist($itemOb);
+            $entityManager->flush();
+            echo $itemOb->getId();
+            break;
+
+        }
+        $arResult=array(
+            'file'=>'/tmp/basiki.php',
+            'items'=>array(
+                array(
+                    'id'=>1,
+                    'name'=>'Басик1',
+                    'status'=>'новый'
+                ),
+                array(
+                    'id'=>2,
+                    'name'=>'Басик2',
+                    'status'=>'старый'
+                )
+            )
+
+        );
+        return $this->render("admin/update_data.html.twig",$arResult);
     }
 }
